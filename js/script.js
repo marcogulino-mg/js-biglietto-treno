@@ -6,3 +6,12 @@ Il programma dovrà chiedere all’utente il numero di chilometri che vuole perc
 - L’output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca. 
 */
 
+//VARs
+//Numero di Kilometri
+let numKm = prompt("A quanti Kilometri ammonta il viaggio che desideri fare?");
+
+//Età del passeggero
+let ageUser = prompt("Inserisci la tua età");
+
+//Prezzo standard
+let priceTicket = 0;
