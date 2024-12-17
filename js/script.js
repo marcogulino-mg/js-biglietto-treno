@@ -15,3 +15,8 @@ let ageUser = prompt("Inserisci la tua età");
 
 //Prezzo standard
 let priceTicket = 0;
+
+//METHODS
+//Calcolo prezzo del biglietto
+// priceTicket = numKm * 0.21;
+// console.log(priceTicket);
