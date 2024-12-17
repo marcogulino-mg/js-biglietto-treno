@@ -22,10 +22,10 @@ priceTicket = numKm * 0.21;
 
 //Calcolo sconto in base all'età dell'utente
 if (ageUser < 18) {
-  priceTicket = priceTicket - (priceTicket * 20) / 100;
+  priceTicket = priceTicket - (priceTicket * 20 / 100);
 } else if (ageUser > 65) {
-  priceTicket = priceTicket - (priceTicket * 40) / 100;
+  priceTicket = priceTicket - (priceTicket * 40 / 100);
 }
 
-
-
+//Stampo il prezzo che l'utente dovrà pagare (conversione in due decimali)
+console.log(priceTicket.toFixed(2));
