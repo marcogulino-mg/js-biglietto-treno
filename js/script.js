@@ -8,24 +8,24 @@ Il programma dovrà chiedere all’utente il numero di chilometri che vuole perc
 
 //VARs
 //Numero di Kilometri
-let numKm = prompt("A quanti Kilometri ammonta il viaggio che desideri fare?");
+let numKm = parseInt(prompt("A quanti Kilometri ammonta il viaggio che desideri fare?"));
 
 //Età del passeggero
-let ageUser = prompt("Inserisci la tua età");
+let ageUser = parseInt(prompt("Inserisci la tua età"));
 
 //Prezzo standard
 let priceTicket = 0;
 
 //METHODS
 //Calcolo prezzo del biglietto
-priceTicket = parseInt(numKm) * 0.21;
+priceTicket = numKm * 0.21;
 
 //Calcolo sconto in base all'età dell'utente
-if (parseInt(ageUser) < 18) {
+if (ageUser < 18) {
   priceTicket = priceTicket - (priceTicket * 20) / 100;
-} else if (parseInt(ageUser) > 65) {
+} else if (ageUser > 65) {
   priceTicket = priceTicket - (priceTicket * 40) / 100;
 }
 
 //Stampo il prezzo che l'utente dovrà pagare (conversione in due decimali)
-console.log(`Il prezzo del biglietto ammonta a: ${Math.floor(priceTicket*100)/100}`);
+console.log(`Il prezzo del biglietto ammonta a: ${Math.floor(priceTicket * 100) / 100}`);
