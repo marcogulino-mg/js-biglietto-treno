@@ -18,5 +18,8 @@ let priceTicket = 0;
 
 //METHODS
 //Calcolo prezzo del biglietto
-// priceTicket = numKm * 0.21;
-// console.log(priceTicket);
+priceTicket = numKm * 0.21;
+
+
+
+
