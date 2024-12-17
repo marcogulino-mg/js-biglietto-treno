@@ -18,10 +18,10 @@ let priceTicket = 0;
 
 //METHODS
 //Calcolo prezzo del biglietto
-priceTicket = numKm * 0.21;
+priceTicket = parseInt(numKm) * 0.21;
 
 //Calcolo sconto in base all'età dell'utente
-if (ageUser < 18) {
+if (parseInt(ageUser) < 18) {
   priceTicket = priceTicket - (priceTicket * 20) / 100;
 } else if (ageUser > 65) {
   priceTicket = priceTicket - (priceTicket * 40) / 100;
