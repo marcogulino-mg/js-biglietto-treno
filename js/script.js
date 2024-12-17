@@ -28,4 +28,4 @@ if (ageUser < 18) {
 }
 
 //Stampo il prezzo che l'utente dovrà pagare (conversione in due decimali)
-console.log(`Il prezzo del biglietto ammonta a: ${priceTicket.toFixed(2)}`);
+console.log(`Il prezzo del biglietto ammonta a: ${Math.floor(priceTicket*100)/100}`);
